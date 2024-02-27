@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,500&display=swap');
+
+body {
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Ubuntu'
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+
+nav .profil {
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+   
+    
+}
+
+nav ul li {
+  border-radius: 20%;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: rgb(161, 189, 250);
+  padding: 0%;
+  font-weight: bold;
+  border-radius: 25%;
+  margin-left: 20px; 
+  margin-right: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+nav ul li:hover {
+    border-bottom-color:black
+}
+
+   /* Styles généraux du menu */
+   ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Styles du menu déroulant */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+} 
+
+
+
+.page-content {
+    margin: 4%;
+}
+.page-content header {
+    margin-top: 3%;
+    max-width: 80%;
+}
+.page-content header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6vw;
+}
+.page-content header p{
+    line-height: 40px;
+    color: #818181;
+}
+.page-content header button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding-left: 0;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 3px solid #ccc;
+    cursor: pointer;
+
+}
+.page-content header button:hover {
+    color: #ccc;
+    border-bottom-color: black;
+}
+.page-content .slider {
+   margin-top: 5%;
+}
+.page-content .slider img {
+    max-width: 100%;
+    height: auto;
+}
+.page-content .slider img:hover {
+    filter:brightness(50%)
+}
+.page-content  .projets-section {
+    margin-top: 6%;
+    
+
+}
+.page-content .projets-section h1{
+    font-family: 'ubuntu',sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.page-content .projets-section .Etudes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.page-content .projets-section .Etudes img {
+    width: 60px;
+    height: 60px;
+    
+}
+
+.page-content .projets-section .Etudes .projet {
+    margin-right: 30px;
+    max-width: 195px;
+}
+
+
+#scrollUp {
+    position: fixed;
+    bottom: 10px;
+    right: -100px; /* Le bouton sera masqué au chargement de la page */
+    opacity: 0.5;
+}
+
+#scrollUp img{
+    border-radius: 50%;
+    max-width: 30%;
+}
+
+footer section {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    padding: 5%;
+}
+
+footer section .colonne .form {
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+ 
+
+ 
+
+footer .colonne a {
+    text-decoration: none;
+}
+ 
+ footer .colonne p {
+    font-size: 15px;
+    color:#ccc
+    
+    
+    
+}
+footer .colonne p:hover {
+    color: #fff;
+}
+footer .colonne img {
+    max-height:20px;
+}  
+
+    
+    
+
+
+
+@media screen and (max-width:700px) {
+    nav {
+        justify-content: center;
+    }
+    nav div {
+        display: none;
+    }
+}
+.page-content header {
+    margin-top: 10%;
+    max-width: 100%;
+}
+.page-content .projets-section{
+    margin-top: 15%;
+}
+ 
+ 
